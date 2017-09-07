@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23F5ACD71F5FEF9C00717546 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5ACD61F5FEF9C00717546 /* main.m */; };
+		23F5ACDA1F5FEF9C00717546 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5ACD91F5FEF9C00717546 /* AppDelegate.m */; };
+		23F5ACDD1F5FEF9C00717546 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5ACDC1F5FEF9C00717546 /* ViewController.m */; };
+		23F5ACE01F5FEF9C00717546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F5ACDE1F5FEF9C00717546 /* Main.storyboard */; };
+		23F5ACE21F5FEF9C00717546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F5ACE11F5FEF9C00717546 /* Assets.xcassets */; };
+		23F5ACE51F5FEF9C00717546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F5ACE31F5FEF9C00717546 /* LaunchScreen.storyboard */; };
+		23F5ACF01F5FEF9D00717546 /* DateToHolidayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5ACEF1F5FEF9D00717546 /* DateToHolidayTests.m */; };
+		23F5ACFD1F5FF0A400717546 /* HolidayTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5ACFC1F5FF0A400717546 /* HolidayTool.m */; };
+		23F5AD0F1F5FF28B00717546 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 23F5ACFF1F5FF28B00717546 /* DateTools.bundle */; };
+		23F5AD101F5FF28B00717546 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5AD021F5FF28B00717546 /* DTConstants.m */; };
+		23F5AD111F5FF28B00717546 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5AD041F5FF28B00717546 /* DTError.m */; };
+		23F5AD121F5FF28B00717546 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5AD061F5FF28B00717546 /* DTTimePeriod.m */; };
+		23F5AD131F5FF28B00717546 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5AD081F5FF28B00717546 /* DTTimePeriodChain.m */; };
+		23F5AD141F5FF28B00717546 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5AD0A1F5FF28B00717546 /* DTTimePeriodCollection.m */; };
+		23F5AD151F5FF28B00717546 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5AD0C1F5FF28B00717546 /* DTTimePeriodGroup.m */; };
+		23F5AD161F5FF28B00717546 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F5AD0E1F5FF28B00717546 /* NSDate+DateTools.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23F5ACEC1F5FEF9D00717546 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23F5ACCA1F5FEF9C00717546 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F5ACD11F5FEF9C00717546;
+			remoteInfo = DateToHoliday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23F5ACD21F5FEF9C00717546 /* DateToHoliday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateToHoliday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F5ACD61F5FEF9C00717546 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23F5ACD81F5FEF9C00717546 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		23F5ACD91F5FEF9C00717546 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		23F5ACDB1F5FEF9C00717546 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		23F5ACDC1F5FEF9C00717546 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		23F5ACDF1F5FEF9C00717546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23F5ACE11F5FEF9C00717546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23F5ACE41F5FEF9C00717546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23F5ACE61F5FEF9C00717546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F5ACEB1F5FEF9D00717546 /* DateToHolidayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateToHolidayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F5ACEF1F5FEF9D00717546 /* DateToHolidayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateToHolidayTests.m; sourceTree = "<group>"; };
+		23F5ACF11F5FEF9D00717546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F5ACFB1F5FF0A400717546 /* HolidayTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidayTool.h; sourceTree = "<group>"; };
+		23F5ACFC1F5FF0A400717546 /* HolidayTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidayTool.m; sourceTree = "<group>"; };
+		23F5ACFF1F5FF28B00717546 /* DateTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DateTools.bundle; sourceTree = "<group>"; };
+		23F5AD001F5FF28B00717546 /* DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTools.h; sourceTree = "<group>"; };
+		23F5AD011F5FF28B00717546 /* DTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConstants.h; sourceTree = "<group>"; };
+		23F5AD021F5FF28B00717546 /* DTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConstants.m; sourceTree = "<group>"; };
+		23F5AD031F5FF28B00717546 /* DTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTError.h; sourceTree = "<group>"; };
+		23F5AD041F5FF28B00717546 /* DTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTError.m; sourceTree = "<group>"; };
+		23F5AD051F5FF28B00717546 /* DTTimePeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriod.h; sourceTree = "<group>"; };
+		23F5AD061F5FF28B00717546 /* DTTimePeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriod.m; sourceTree = "<group>"; };
+		23F5AD071F5FF28B00717546 /* DTTimePeriodChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodChain.h; sourceTree = "<group>"; };
+		23F5AD081F5FF28B00717546 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodChain.m; sourceTree = "<group>"; };
+		23F5AD091F5FF28B00717546 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		23F5AD0A1F5FF28B00717546 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		23F5AD0B1F5FF28B00717546 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		23F5AD0C1F5FF28B00717546 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		23F5AD0D1F5FF28B00717546 /* NSDate+DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
+		23F5AD0E1F5FF28B00717546 /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23F5ACCF1F5FEF9C00717546 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F5ACE81F5FEF9D00717546 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23F5ACC91F5FEF9C00717546 = {
+			isa = PBXGroup;
+			children = (
+				23F5ACFE1F5FF28B00717546 /* DateTools */,
+				23F5ACFA1F5FF07B00717546 /* HolidayTool */,
+				23F5ACD41F5FEF9C00717546 /* DateToHoliday */,
+				23F5ACEE1F5FEF9D00717546 /* DateToHolidayTests */,
+				23F5ACD31F5FEF9C00717546 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23F5ACD31F5FEF9C00717546 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23F5ACD21F5FEF9C00717546 /* DateToHoliday.app */,
+				23F5ACEB1F5FEF9D00717546 /* DateToHolidayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23F5ACD41F5FEF9C00717546 /* DateToHoliday */ = {
+			isa = PBXGroup;
+			children = (
+				23F5ACD81F5FEF9C00717546 /* AppDelegate.h */,
+				23F5ACD91F5FEF9C00717546 /* AppDelegate.m */,
+				23F5ACDB1F5FEF9C00717546 /* ViewController.h */,
+				23F5ACDC1F5FEF9C00717546 /* ViewController.m */,
+				23F5ACDE1F5FEF9C00717546 /* Main.storyboard */,
+				23F5ACE11F5FEF9C00717546 /* Assets.xcassets */,
+				23F5ACE31F5FEF9C00717546 /* LaunchScreen.storyboard */,
+				23F5ACE61F5FEF9C00717546 /* Info.plist */,
+				23F5ACD51F5FEF9C00717546 /* Supporting Files */,
+			);
+			path = DateToHoliday;
+			sourceTree = "<group>";
+		};
+		23F5ACD51F5FEF9C00717546 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23F5ACD61F5FEF9C00717546 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23F5ACEE1F5FEF9D00717546 /* DateToHolidayTests */ = {
+			isa = PBXGroup;
+			children = (
+				23F5ACEF1F5FEF9D00717546 /* DateToHolidayTests.m */,
+				23F5ACF11F5FEF9D00717546 /* Info.plist */,
+			);
+			path = DateToHolidayTests;
+			sourceTree = "<group>";
+		};
+		23F5ACFA1F5FF07B00717546 /* HolidayTool */ = {
+			isa = PBXGroup;
+			children = (
+				23F5ACFB1F5FF0A400717546 /* HolidayTool.h */,
+				23F5ACFC1F5FF0A400717546 /* HolidayTool.m */,
+			);
+			path = HolidayTool;
+			sourceTree = "<group>";
+		};
+		23F5ACFE1F5FF28B00717546 /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				23F5ACFF1F5FF28B00717546 /* DateTools.bundle */,
+				23F5AD001F5FF28B00717546 /* DateTools.h */,
+				23F5AD011F5FF28B00717546 /* DTConstants.h */,
+				23F5AD021F5FF28B00717546 /* DTConstants.m */,
+				23F5AD031F5FF28B00717546 /* DTError.h */,
+				23F5AD041F5FF28B00717546 /* DTError.m */,
+				23F5AD051F5FF28B00717546 /* DTTimePeriod.h */,
+				23F5AD061F5FF28B00717546 /* DTTimePeriod.m */,
+				23F5AD071F5FF28B00717546 /* DTTimePeriodChain.h */,
+				23F5AD081F5FF28B00717546 /* DTTimePeriodChain.m */,
+				23F5AD091F5FF28B00717546 /* DTTimePeriodCollection.h */,
+				23F5AD0A1F5FF28B00717546 /* DTTimePeriodCollection.m */,
+				23F5AD0B1F5FF28B00717546 /* DTTimePeriodGroup.h */,
+				23F5AD0C1F5FF28B00717546 /* DTTimePeriodGroup.m */,
+				23F5AD0D1F5FF28B00717546 /* NSDate+DateTools.h */,
+				23F5AD0E1F5FF28B00717546 /* NSDate+DateTools.m */,
+			);
+			path = DateTools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23F5ACD11F5FEF9C00717546 /* DateToHoliday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F5ACF41F5FEF9D00717546 /* Build configuration list for PBXNativeTarget "DateToHoliday" */;
+			buildPhases = (
+				23F5ACCE1F5FEF9C00717546 /* Sources */,
+				23F5ACCF1F5FEF9C00717546 /* Frameworks */,
+				23F5ACD01F5FEF9C00717546 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateToHoliday;
+			productName = DateToHoliday;
+			productReference = 23F5ACD21F5FEF9C00717546 /* DateToHoliday.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23F5ACEA1F5FEF9D00717546 /* DateToHolidayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F5ACF71F5FEF9D00717546 /* Build configuration list for PBXNativeTarget "DateToHolidayTests" */;
+			buildPhases = (
+				23F5ACE71F5FEF9D00717546 /* Sources */,
+				23F5ACE81F5FEF9D00717546 /* Frameworks */,
+				23F5ACE91F5FEF9D00717546 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23F5ACED1F5FEF9D00717546 /* PBXTargetDependency */,
+			);
+			name = DateToHolidayTests;
+			productName = DateToHolidayTests;
+			productReference = 23F5ACEB1F5FEF9D00717546 /* DateToHolidayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23F5ACCA1F5FEF9C00717546 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = wxzhi;
+				TargetAttributes = {
+					23F5ACD11F5FEF9C00717546 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					23F5ACEA1F5FEF9D00717546 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 97NYV89UQG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 23F5ACD11F5FEF9C00717546;
+					};
+				};
+			};
+			buildConfigurationList = 23F5ACCD1F5FEF9C00717546 /* Build configuration list for PBXProject "DateToHoliday" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23F5ACC91F5FEF9C00717546;
+			productRefGroup = 23F5ACD31F5FEF9C00717546 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23F5ACD11F5FEF9C00717546 /* DateToHoliday */,
+				23F5ACEA1F5FEF9D00717546 /* DateToHolidayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23F5ACD01F5FEF9C00717546 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F5ACE51F5FEF9C00717546 /* LaunchScreen.storyboard in Resources */,
+				23F5ACE21F5FEF9C00717546 /* Assets.xcassets in Resources */,
+				23F5ACE01F5FEF9C00717546 /* Main.storyboard in Resources */,
+				23F5AD0F1F5FF28B00717546 /* DateTools.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F5ACE91F5FEF9D00717546 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23F5ACCE1F5FEF9C00717546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F5AD111F5FF28B00717546 /* DTError.m in Sources */,
+				23F5AD151F5FF28B00717546 /* DTTimePeriodGroup.m in Sources */,
+				23F5AD101F5FF28B00717546 /* DTConstants.m in Sources */,
+				23F5ACFD1F5FF0A400717546 /* HolidayTool.m in Sources */,
+				23F5AD161F5FF28B00717546 /* NSDate+DateTools.m in Sources */,
+				23F5AD131F5FF28B00717546 /* DTTimePeriodChain.m in Sources */,
+				23F5AD121F5FF28B00717546 /* DTTimePeriod.m in Sources */,
+				23F5ACDD1F5FEF9C00717546 /* ViewController.m in Sources */,
+				23F5ACDA1F5FEF9C00717546 /* AppDelegate.m in Sources */,
+				23F5AD141F5FF28B00717546 /* DTTimePeriodCollection.m in Sources */,
+				23F5ACD71F5FEF9C00717546 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F5ACE71F5FEF9D00717546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F5ACF01F5FEF9D00717546 /* DateToHolidayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23F5ACED1F5FEF9D00717546 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F5ACD11F5FEF9C00717546 /* DateToHoliday */;
+			targetProxy = 23F5ACEC1F5FEF9D00717546 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23F5ACDE1F5FEF9C00717546 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23F5ACDF1F5FEF9C00717546 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23F5ACE31F5FEF9C00717546 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23F5ACE41F5FEF9C00717546 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23F5ACF21F5FEF9D00717546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		23F5ACF31F5FEF9D00717546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23F5ACF51F5FEF9D00717546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DateToHoliday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxzhi.DateToHoliday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		23F5ACF61F5FEF9D00717546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DateToHoliday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxzhi.DateToHoliday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		23F5ACF81F5FEF9D00717546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 97NYV89UQG;
+				INFOPLIST_FILE = DateToHolidayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxzhi.DateToHolidayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DateToHoliday.app/DateToHoliday";
+			};
+			name = Debug;
+		};
+		23F5ACF91F5FEF9D00717546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 97NYV89UQG;
+				INFOPLIST_FILE = DateToHolidayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxzhi.DateToHolidayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DateToHoliday.app/DateToHoliday";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23F5ACCD1F5FEF9C00717546 /* Build configuration list for PBXProject "DateToHoliday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F5ACF21F5FEF9D00717546 /* Debug */,
+				23F5ACF31F5FEF9D00717546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23F5ACF41F5FEF9D00717546 /* Build configuration list for PBXNativeTarget "DateToHoliday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F5ACF51F5FEF9D00717546 /* Debug */,
+				23F5ACF61F5FEF9D00717546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		23F5ACF71F5FEF9D00717546 /* Build configuration list for PBXNativeTarget "DateToHolidayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F5ACF81F5FEF9D00717546 /* Debug */,
+				23F5ACF91F5FEF9D00717546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23F5ACCA1F5FEF9C00717546 /* Project object */;
+}
