@@ -424,6 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DateToHoliday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wxzhi.DateToHoliday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DateToHoliday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wxzhi.DateToHoliday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,6 +489,7 @@
 				23F5ACF61F5FEF9D00717546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23F5ACF71F5FEF9D00717546 /* Build configuration list for PBXNativeTarget "DateToHolidayTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +498,7 @@
 				23F5ACF91F5FEF9D00717546 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
