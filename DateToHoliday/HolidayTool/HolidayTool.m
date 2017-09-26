@@ -38,6 +38,7 @@
     NSDictionary *chineseHoliDay = [NSDictionary dictionaryWithObjectsAndKeys:
                                     @"春节", @"1-1",
                                     @"元宵节", @"1-15",
+                                    @"龙抬头", @"2-2",
                                     @"端午节", @"5-5",
                                     @"七夕节", @"7-7",
                                     @"中元节", @"7-15",
@@ -72,11 +73,16 @@
         localeComp.month = 6;
         NSInteger week_now2 = [[localeCalendar dateFromComponents:localeComp] weekday]-1;
         NSString *fatherDayStr = [NSString stringWithFormat:@"6-%ld",week_now2==0?15:22-week_now2];
+        //感恩节
+        localeComp.month = 11;
+        NSInteger week_now3 = [[localeCalendar dateFromComponents:localeComp] weekday]-1;
+        NSInteger thanksgivingDayDay = (4 >= week_now3) ? ((4-week_now3)+22) : (28-(week_now3-5));
+        NSString *thanksgivingDayStr = [NSString stringWithFormat:@"11-%ld",thanksgivingDayDay];
         
         NSDictionary *holiDay = [NSDictionary dictionaryWithObjectsAndKeys:
                                  @"元旦节", @"1-1",
                                  @"情人节", @"2-14",
-                                 @"青年志愿者服务日", @"3-5",
+                                 @"青年志愿者服务日(雷锋日)", @"3-5",
                                  @"妇女节", @"3-8",
                                  @"植树节", @"3-12",
                                  @"白色情人节", @"3-14",
@@ -101,6 +107,7 @@
                                  @"圣诞节", @"12-25",
                                  @"母亲节", motherDayStr,
                                  @"父亲节", fatherDayStr,
+                                 @"感恩节", thanksgivingDayStr,
                                  nil];
         return [holiDay objectForKey:key_str];
     }
