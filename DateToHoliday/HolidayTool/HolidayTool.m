@@ -12,10 +12,10 @@
 @implementation HolidayTool
 
 #pragma mark 日子
-+ (NSString *)specialdDayFromYear:(NSInteger)year month:(NSInteger)month Day:(NSInteger)day{
++ (NSString *)specialdDayFromYear:(NSInteger)year month:(NSInteger)month Day:(NSInteger)day {
     NSDate *date = [NSDate dateWithYear:year month:month day:day];
     NSString *HoliDay = [self holiDayFromDate:date];
-    if (HoliDay.length > 0){
+    if (HoliDay.length > 0) {
         return HoliDay;
     }else{
         return [self solartermFromDate:date];
@@ -23,16 +23,16 @@
 }
 
 #pragma mark 节日
-+(NSString *)holiDayFromDate:(NSDate *)date{
++ (NSString *)holiDayFromDate:(NSDate *)date {
     
     NSTimeInterval timeInterval_day = 60*60*24;
     NSDate *nextDay_date = [NSDate dateWithTimeInterval:timeInterval_day sinceDate:date];
     
     NSCalendar *localeCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierChinese];
-    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay;
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
     NSDateComponents *localeComp = [localeCalendar components:unitFlags fromDate:nextDay_date];
     
-    if ( 1 == localeComp.month && 1 == localeComp.day ) {
+    if (1 == localeComp.month && 1 == localeComp.day) {
         return @"除夕";
     }
     NSDictionary *chineseHoliDay = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -55,7 +55,7 @@
     
     if ([chineseHoliDay.allKeys containsObject:key_str]) {//农历节日
         return [chineseHoliDay objectForKey:key_str];
-    }else{//新历节日
+    } else {//新历节日
         NSCalendar *localeCalendar = [NSCalendar currentCalendar];
         
         unsigned unitFlags =NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitWeekdayOrdinal|NSCalendarUnitWeekday;
@@ -68,15 +68,15 @@
         localeComp.month = 5;
         localeComp.day = 1;
         NSInteger week_now =   [[localeCalendar dateFromComponents:localeComp] weekday]-1;
-        NSString *motherDayStr = [NSString stringWithFormat:@"5-%ld",week_now==0?8:15-week_now];
+        NSString *motherDayStr = [NSString stringWithFormat:@"5-%ld", week_now == 0 ? 8 : 15 -week_now];
         //父亲节
         localeComp.month = 6;
-        NSInteger week_now2 = [[localeCalendar dateFromComponents:localeComp] weekday]-1;
-        NSString *fatherDayStr = [NSString stringWithFormat:@"6-%ld",week_now2==0?15:22-week_now2];
+        NSInteger week_now2 = [[localeCalendar dateFromComponents:localeComp] weekday] - 1;
+        NSString *fatherDayStr = [NSString stringWithFormat:@"6-%ld", week_now2 == 0 ? 1 : 22 -week_now2];
         //感恩节
         localeComp.month = 11;
-        NSInteger week_now3 = [[localeCalendar dateFromComponents:localeComp] weekday]-1;
-        NSInteger thanksgivingDayDay = (4 >= week_now3) ? ((4-week_now3)+22) : (28-(week_now3-5));
+        NSInteger week_now3 = [[localeCalendar dateFromComponents:localeComp] weekday] - 1;
+        NSInteger thanksgivingDayDay = (4 >= week_now3) ? ((4 - week_now3) + 22) : (28 - (week_now3 - 5));
         NSString *thanksgivingDayStr = [NSString stringWithFormat:@"11-%ld",thanksgivingDayDay];
         
         NSDictionary *holiDay = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -115,7 +115,7 @@
 }
 
 #pragma mark 节气
-+ (NSString *)solartermFromDate:(NSDate *)date{
++ (NSString *)solartermFromDate:(NSDate *)date {
     
     NSCalendar *localeCalendar = [NSCalendar currentCalendar];
     unsigned unitFlags = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay;
@@ -131,14 +131,14 @@
                           @"小暑", @"大暑", @"立秋", @"处暑", @"白露", @"秋分",
                           @"寒露", @"霜降", @"立冬", @"小雪", @"大雪", @"冬至", nil];
     
-    NSInteger array_index = (Year - START_YEAR)*12+Month -1 ;
+    NSInteger array_index = (Year - START_YEAR) * 12 + Month - 1;
     int64_t flag = gLunarHolDay[array_index];
     
     int64_t day = Day < 15 ? (15 - ((flag>>4)&0x0f)) : (day = ((flag)&0x0f) + 15);
     
     NSInteger index = -1;
-    if(Day == day){
-        index = (Month-1) *2 + (Day>15? 1: 0);
+    if(Day == day) {
+        index = (Month - 1) * 2 + (Day > 15 ? 1: 0);
     }
     if (index >= 0  && index < [chineseDays count]) {
         return [chineseDays objectAtIndex:index];
@@ -147,10 +147,10 @@
     }
 }
 
-const  int START_YEAR =1901;
-const  int END_YEAR   =2050;
+const  int START_YEAR = 1901;
+const  int END_YEAR   = 2050;
 
-static int32_t gLunarHolDay[]=
+static int32_t gLunarHolDay[] =
 {//农历时间对照表（节气）
     0X96, 0XB4, 0X96, 0XA6, 0X97, 0X97, 0X78, 0X79, 0X79, 0X69, 0X78, 0X77,   //1901
     0X96, 0XA4, 0X96, 0X96, 0X97, 0X87, 0X79, 0X79, 0X79, 0X69, 0X78, 0X78,   //1902
